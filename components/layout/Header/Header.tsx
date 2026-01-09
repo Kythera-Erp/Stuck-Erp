@@ -1,10 +1,17 @@
-import "./header.css"
+import "./header.css";
 export default function Header() {
-  return(
-    <div className='header'>
-      <a href="#"><img src="./images/stuck-logo.png" style={{ width: "60px" }} alt="Stuck Logo" />STUCK</a>
+  return (
+    <div className="header">
+      <a href="#">
+        <img
+          src="./images/stuck-logo.png"
+          style={{ width: "60px" }}
+          alt="Stuck Logo"
+        />
+        STUCK
+      </a>
       <div className="burger-menu">
-        <input type="checkbox" id='menu_checkbox' className="menu_checkbox" />
+        <input type="checkbox" id="menu_checkbox" className="menu_checkbox" />
         <label htmlFor="menu_checkbox">
           <div></div>
           <div></div>
@@ -19,5 +26,5 @@ export default function Header() {
         </nav>
       </div>
     </div>
-  )
+  );
 }

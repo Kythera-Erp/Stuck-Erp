@@ -20,8 +20,8 @@
 }
 
 .stuck-card {
-  background: #2F3449;
-  border: 1px solid rgba(255,255,255,0.1);
+  background: #2f3449;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 12px;
   display: flex;
@@ -34,15 +34,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4A5566;
+  background: #4a5566;
   padding-inline: 8px;
   border-radius: 12px;
-
 }
 
-
 .badge {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
 }
 

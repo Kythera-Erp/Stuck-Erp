@@ -1,3 +1,42 @@
+:root {
+  --bg0: #070815;
+  --bg1: #0b1230;
+  --bg2: #081b2a;
+
+  --panel: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.12);
+
+  --text: #eaf0ff;
+  --muted: #b7c3e6;
+  --muted2: #8ea0cf;
+
+  --accent1: #7c3aed;
+  /* purple */
+  --accent2: #06b6d4;
+  /* cyan */
+  --accent3: #22c55e;
+  /* green */
+  --warn: #f59e0b;
+  --danger: #ef4444;
+
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  --shadow2: 0 12px 34px rgba(0, 0, 0, 0.35);
+
+  --radius: 16px;
+  --radius2: 22px;
+  --ring: 0 0 0 4px rgba(124, 58, 237, 0.25);
+
+  --tableRow: rgba(255, 255, 255, 0.04);
+  --tableRow2: rgba(255, 255, 255, 0.02);
+
+  --font: "Montserrat", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* KPI tentacle pattern (SVG data-uri) */
+  --tentaclePattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='120' viewBox='0 0 220 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M10 95 C40 70, 40 40, 12 22'/%3E%3Cpath d='M30 110 C60 92, 70 62, 46 30'/%3E%3Cpath d='M70 120 C92 92, 110 70, 92 38'/%3E%3Cpath d='M110 118 C122 92, 146 70, 128 42'/%3E%3Cpath d='M150 112 C176 92, 180 62, 158 34'/%3E%3Cpath d='M188 98 C210 84, 214 56, 196 30'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Ccircle cx='12' cy='22' r='3'/%3E%3Ccircle cx='46' cy='30' r='3'/%3E%3Ccircle cx='92' cy='38' r='3'/%3E%3Ccircle cx='128' cy='42' r='3'/%3E%3Ccircle cx='158' cy='34' r='3'/%3E%3Ccircle cx='196' cy='30' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 *,
 *::before,
 *::after {
@@ -20,12 +59,22 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
-  background:
-    radial-gradient(1200px 800px at 12% 10%, rgba(124, 58, 237, 0.20), transparent 60%),
-    radial-gradient(900px 700px at 85% 20%, rgba(6, 182, 212, 0.18), transparent 55%),
-    radial-gradient(800px 700px at 55% 90%, rgba(34, 197, 94, 0.12), transparent 60%),
+  background: radial-gradient(
+      1200px 800px at 12% 10%,
+      rgba(124, 58, 237, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 700px at 85% 20%,
+      rgba(6, 182, 212, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      800px 700px at 55% 90%,
+      rgba(34, 197, 94, 0.12),
+      transparent 60%
+    ),
     linear-gradient(180deg, var(--bg0), var(--bg1) 55%, var(--bg2));
-  overflow-x: hidden;
 }
 
 img,
@@ -67,52 +116,15 @@ h6 {
   text-wrap: balance;
 }
 
-
 #root,
 #__next {
   isolation: isolate;
 }
 
-:root {
-  --bg0: #070815;
-  --bg1: #0b1230;
-  --bg2: #081b2a;
-
-  --panel: rgba(255, 255, 255, 0.07);
-  --border: rgba(255, 255, 255, 0.12);
-
-  --text: #eaf0ff;
-  --muted: #b7c3e6;
-  --muted2: #8ea0cf;
-
-  --accent1: #7c3aed;
-  /* purple */
-  --accent2: #06b6d4;
-  /* cyan */
-  --accent3: #22c55e;
-  /* green */
-  --warn: #f59e0b;
-  --danger: #ef4444;
-
-  --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
-  --shadow2: 0 12px 34px rgba(0, 0, 0, 0.35);
-
-  --radius: 16px;
-  --radius2: 22px;
-  --ring: 0 0 0 4px rgba(124, 58, 237, 0.25);
-
-  --tableRow: rgba(255, 255, 255, 0.04);
-  --tableRow2: rgba(255, 255, 255, 0.02);
-
-  --font: "Montserrat", sans-serif;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-  /* KPI tentacle pattern (SVG data-uri) */
-  --tentaclePattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='120' viewBox='0 0 220 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M10 95 C40 70, 40 40, 12 22'/%3E%3Cpath d='M30 110 C60 92, 70 62, 46 30'/%3E%3Cpath d='M70 120 C92 92, 110 70, 92 38'/%3E%3Cpath d='M110 118 C122 92, 146 70, 128 42'/%3E%3Cpath d='M150 112 C176 92, 180 62, 158 34'/%3E%3Cpath d='M188 98 C210 84, 214 56, 196 30'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Ccircle cx='12' cy='22' r='3'/%3E%3Ccircle cx='46' cy='30' r='3'/%3E%3Ccircle cx='92' cy='38' r='3'/%3E%3Ccircle cx='128' cy='42' r='3'/%3E%3Ccircle cx='158' cy='34' r='3'/%3E%3Ccircle cx='196' cy='30' r='3'/%3E%3C/g%3E%3C/svg%3E");
-}
 a {
   text-decoration: none;
 }
+
 .page-dashboard {
-  margin-inline:24px ;
+  margin-inline: 24px;
 }

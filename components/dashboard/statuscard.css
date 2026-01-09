@@ -2,11 +2,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  .card{
+  .card {
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04));
-    box-shadow: 0 12px 34px rgba(0,0,0,0.35);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 255, 255, 0.04)
+    );
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
     border-radius: 16px;
     position: relative;
     overflow: hidden;
@@ -17,7 +21,17 @@
     content: "";
     position: absolute;
     inset: -30px;
-    background: var(--tentaclePattern), radial-gradient(240px 140px at 20% 20%, rgba(124, 58, 237, 0.26), transparent 62%), radial-gradient(240px 140px at 90% 30%, rgba(6, 182, 212, 0.18), transparent 62%);
+    background: var(--tentaclePattern),
+      radial-gradient(
+        240px 140px at 20% 20%,
+        rgba(124, 58, 237, 0.26),
+        transparent 62%
+      ),
+      radial-gradient(
+        240px 140px at 90% 30%,
+        rgba(6, 182, 212, 0.18),
+        transparent 62%
+      );
     background-repeat: repeat, no-repeat, no-repeat;
     background-size: 240px 140px, auto, auto;
     filter: blur(0px);
@@ -28,7 +42,11 @@
     content: "";
     position: absolute;
     inset: -2px;
-    background: radial-gradient(420px 180px at 30% 40%, rgba(124, 58, 237, 0.18), transparent 60%);
+    background: radial-gradient(
+      420px 180px at 30% 40%,
+      rgba(124, 58, 237, 0.18),
+      transparent 60%
+    );
     opacity: 0;
     transition: 180ms ease;
     pointer-events: none;
@@ -39,7 +57,7 @@
   align-items: center;
   p {
     color: #b7c3e6;
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 .card-value {
