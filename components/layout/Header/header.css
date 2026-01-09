@@ -3,11 +3,9 @@
   justify-content: space-between;
   align-items: center;
   position:  relative;
-  border: 1px solid rgba(255,255,255,0.14);
-  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-  border-radius: 26px;
-  padding: 10px;
-  margin:  16px 8px;
+  border-bottom: 1px solid rgb(3, 3, 3);
+  padding: 12px 24px;
+  margin-bottom: 24px;
   a {
     display: flex;
     justify-content: center;
@@ -77,7 +75,10 @@ label div:nth-child(2) {
   right: -300px;          
   width: 300px;
   height: 100vh;
-  background: #111;
+  background: rgb(47, 47, 48);
+  /* backdrop-filter: blur(16px); */
+  border-left: 5px solid black ;
+  border-radius: 50px 0 0 50px;
   padding: 130px 24px;
   display: flex;
   flex-direction: column;
@@ -88,11 +89,29 @@ label div:nth-child(2) {
 .menu_checkbox:checked ~ .side-menu {
   right: 0;
 }
+.menu_checkbox:checked ~ label {
+  position: fixed;
+}
 .side-menu a {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   transition: 0.3s;
+}
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 98;
+}
+
+.menu_checkbox:checked ~ .menu-overlay {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .side-menu a:hover {

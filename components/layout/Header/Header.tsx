@@ -10,6 +10,7 @@ export default function Header() {
           <div></div>
           <div></div>
         </label>
+        <div className="menu-overlay"></div>
         <nav className="side-menu">
           <a href="#">Dashboard</a>
           <a href="#">Orders</a>

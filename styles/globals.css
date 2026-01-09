@@ -110,12 +110,9 @@ h6 {
   /* KPI tentacle pattern (SVG data-uri) */
   --tentaclePattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='120' viewBox='0 0 220 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M10 95 C40 70, 40 40, 12 22'/%3E%3Cpath d='M30 110 C60 92, 70 62, 46 30'/%3E%3Cpath d='M70 120 C92 92, 110 70, 92 38'/%3E%3Cpath d='M110 118 C122 92, 146 70, 128 42'/%3E%3Cpath d='M150 112 C176 92, 180 62, 158 34'/%3E%3Cpath d='M188 98 C210 84, 214 56, 196 30'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Ccircle cx='12' cy='22' r='3'/%3E%3Ccircle cx='46' cy='30' r='3'/%3E%3Ccircle cx='92' cy='38' r='3'/%3E%3Ccircle cx='128' cy='42' r='3'/%3E%3Ccircle cx='158' cy='34' r='3'/%3E%3Ccircle cx='196' cy='30' r='3'/%3E%3C/g%3E%3C/svg%3E");
 }
-
-html,
-body {
-  height: 100%;
-}
-
 a {
   text-decoration: none;
+}
+.page-dashboard {
+  margin-inline:24px ;
 }
