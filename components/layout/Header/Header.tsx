@@ -20,12 +20,11 @@ export default function Header() {
         </label>
         <div className="menu-overlay"></div>
         <nav className="side-menu">
-          <Link href="/">Dashboard</Link>
-          {/* <Link href="#">Dashboard > */}
+          <Link href="/dashboard">Dashboard</Link>
           <Link href="/dashboard/orders">Siparişler</Link>
           <Link href="/dashboard/stock-management">Stok Yönetimi</Link>
           <Link href="/dashboard/bom">Master BOM</Link>
-          <Link href="#">İç Üretim</Link>
+          <Link href="/dashboard/domestic-production">İç Üretim</Link>
           <Link href="/dashboard/import">Import / Aktarım</Link>
           <div className="role">
             <h5>Kullanıcı - <span>Ali Yıldız</span></h5>

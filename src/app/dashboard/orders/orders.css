@@ -72,11 +72,24 @@
 }
 
 .order-list {
+  .order-search {
+    margin-block: 12px;
+    label {
+      display: flex;
+      flex-direction: column;
+      input {
+        border-radius: 8px;
+        border: none;
+        padding: 8px;
+        margin-top: 6px;
+        
+      }
+    }
+  }
   .mobile-orders {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 8px;
   }
 
   .order-card {
