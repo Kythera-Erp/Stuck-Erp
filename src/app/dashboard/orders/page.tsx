@@ -19,7 +19,7 @@ export default function Orders() {
           </label>
           <label htmlFor="">
             Miktar
-            <input type="text" name="" id="" placeholder="1" />
+            <input type="number" name="" id="" placeholder="1" />
           </label>
           <label htmlFor="">
             Teslim Tarihi
@@ -32,6 +32,7 @@ export default function Orders() {
               <option value="BOM'lu">BOM'suz</option>
             </select>
           </label>
+          <button>Sipariş Oluştur</button>
         </form>
       </div>
       <div className="order-list">

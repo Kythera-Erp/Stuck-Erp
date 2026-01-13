@@ -131,3 +131,6 @@ a {
 .content {
   padding-inline: 24px;
 }
+button {
+  cursor: pointer;
+}
