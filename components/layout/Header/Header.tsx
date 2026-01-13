@@ -1,15 +1,16 @@
+import Link from "next/link";
 import "./header.css";
 export default function Header() {
   return (
     <div className="header">
-      <a href="#">
-        <img
+      <h2>
+        {/* <img
           src="./images/stuck-logo.png"
           style={{ width: "60px" }}
           alt="Stuck Logo"
-        />
-        STUCK
-      </a>
+        /> */}
+        STU<span>CK</span>
+      </h2>
       <div className="burger-menu">
         <input type="checkbox" id="menu_checkbox" className="menu_checkbox" />
         <label htmlFor="menu_checkbox">
@@ -19,10 +20,16 @@ export default function Header() {
         </label>
         <div className="menu-overlay"></div>
         <nav className="side-menu">
-          <a href="#">Dashboard</a>
-          <a href="#">Orders</a>
-          <a href="#">Products</a>
-          <a href="#">Settings</a>
+          <Link href="/">Dashboard</Link>
+          {/* <Link href="#">Dashboard > */}
+          <Link href="/dashboard/orders">Siparişler</Link>
+          <Link href="/dashboard/stock-management">Stok Yönetimi</Link>
+          <Link href="/dashboard/bom">Master BOM</Link>
+          <Link href="#">İç Üretim</Link>
+          <Link href="/dashboard/import">Import / Aktarım</Link>
+          <div className="role">
+            <h5>Kullanıcı - <span>Ali Yıldız</span></h5>
+          </div>
         </nav>
       </div>
     </div>

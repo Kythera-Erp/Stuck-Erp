@@ -1,5 +1,5 @@
 export default function StockManagement() {
   return(
-    <div></div>
+    <div>Stok Yönetimi</div>
   )
 }

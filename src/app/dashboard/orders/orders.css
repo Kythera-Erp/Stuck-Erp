@@ -1,0 +1,88 @@
+.new-order {
+  margin-bottom: 32px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+  }
+  
+  form > label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  form input,
+  form select {
+    height: 48px;                 
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 16px;              
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  
+  form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+  }
+  
+  form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 7.5L10 12l4.5-4.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+}
+.orders {
+  h3 {
+      font-size: 1.3em;
+      font-weight: 900;
+    }
+
+}
+.order-list {
+  .mobile-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px;
+  }
+
+  .order-card {
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .order-card h6 {
+    font-size: 16px;
+    color: #fccbcb59;
+    strong {
+      margin-right: 5px;
+      color: #fff;
+    }
+  }
+}
+
+

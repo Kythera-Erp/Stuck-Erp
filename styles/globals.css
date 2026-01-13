@@ -128,3 +128,6 @@ a {
 .page-dashboard {
   margin-inline: 24px;
 }
+.content {
+  padding-inline: 24px;
+}
