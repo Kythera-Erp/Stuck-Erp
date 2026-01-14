@@ -118,11 +118,6 @@ h6 {
 a {
   text-decoration: none;
 }
-
-.page-dashboard {
-  margin-inline: 24px;
-}
-
 .content {
   padding-inline: 24px;
 }
@@ -131,7 +126,7 @@ button {
   cursor: pointer;
 }
 
-input:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: #38bdf8;
   box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
@@ -141,4 +136,8 @@ li {
 }
 ul {
   padding: 0;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: 900;
 }

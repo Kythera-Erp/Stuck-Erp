@@ -37,10 +37,8 @@ export default function Orders() {
       </div>
       <div className="order-list">
         <h3>Sipariş Listesi</h3>
-        <div className="order-search">
-          <label htmlFor=""> Arama
-            <input type="text" placeholder="Kod / ID" />
-          </label>
+        <div className="order-filter">
+          <input type="text" placeholder="Ara" />
         </div>
         <div className="mobile-orders">
           <div className="order-card">

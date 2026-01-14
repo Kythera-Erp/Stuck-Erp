@@ -1,4 +1,4 @@
-import "./workdorders.css";
+import "./workorders.css";
 export default function WorkOrders() {
   return (
     <div className="orders-panel">

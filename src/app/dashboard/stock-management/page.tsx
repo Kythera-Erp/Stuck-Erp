@@ -66,7 +66,7 @@ export default function StockManagement() {
         <div className="current-stock">
           <h3>Mevcut Stoklar</h3>
           <div className="stock-filter">
-            <input type="text" placeholder="Kod" />
+            <input type="text" placeholder="Ara" />
           </div>
           <div className="stock-list">
             <div className="stock-card">

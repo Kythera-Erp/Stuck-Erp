@@ -3,14 +3,7 @@ import "./header.css";
 export default function Header() {
   return (
     <div className="header">
-      <h2>
-        {/* <img
-          src="./images/stuck-logo.png"
-          style={{ width: "60px" }}
-          alt="Stuck Logo"
-        /> */}
-        STU<span>CK</span>
-      </h2>
+      <h2>STU<span>CK</span></h2>
       <div className="burger-menu">
         <input type="checkbox" id="menu_checkbox" className="menu_checkbox" />
         <label htmlFor="menu_checkbox">
@@ -26,6 +19,7 @@ export default function Header() {
           <Link href="/dashboard/bom">Master BOM</Link>
           <Link href="/dashboard/domestic-production">İç Üretim</Link>
           <Link href="/dashboard/import">Import / Aktarım</Link>
+          <Link href="/dashboard/settings">Ayarlar</Link>
           <div className="role">
             <h5>Kullanıcı - <span>Ali Yıldız</span></h5>
           </div>

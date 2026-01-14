@@ -62,29 +62,18 @@
 
   }
 }
-
-.orders {
-  h3 {
-    font-size: 1.3em;
-    font-weight: 900;
-  }
-
-}
-
 .order-list {
-  .order-search {
-    margin-block: 12px;
-    label {
-      display: flex;
-      flex-direction: column;
+  .order-filter {
+    margin-block: 12px 20px;
       input {
         border-radius: 8px;
         border: none;
         padding: 8px;
         margin-top: 6px;
+        width: 100%;
         
       }
-    }
+    
   }
   .mobile-orders {
     display: flex;
