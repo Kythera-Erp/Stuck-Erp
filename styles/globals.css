@@ -59,21 +59,15 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
-  background: radial-gradient(
-      1200px 800px at 12% 10%,
+  background: radial-gradient(1200px 800px at 12% 10%,
       rgba(124, 58, 237, 0.2),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 700px at 85% 20%,
+      transparent 60%),
+    radial-gradient(900px 700px at 85% 20%,
       rgba(6, 182, 212, 0.18),
-      transparent 55%
-    ),
-    radial-gradient(
-      800px 700px at 55% 90%,
+      transparent 55%),
+    radial-gradient(800px 700px at 55% 90%,
       rgba(34, 197, 94, 0.12),
-      transparent 60%
-    ),
+      transparent 60%),
     linear-gradient(180deg, var(--bg0), var(--bg1) 55%, var(--bg2));
 }
 
@@ -128,9 +122,23 @@ a {
 .page-dashboard {
   margin-inline: 24px;
 }
+
 .content {
   padding-inline: 24px;
 }
+
 button {
   cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
 }

@@ -28,17 +28,64 @@ export default function Bom() {
       </div>
       <div className="bom-editor">
         <h3>Master BOM Düzenleyici</h3>
-        <div className="bom-fields">
-          <label className="field">
-            <span>Ürün Kodu</span>
-            <input type="text" placeholder="HRT-12" />
-          </label>
+        <form>
+          <div className="bom-fields">
+            <label className="field">
+              <span>Ürün Kodu</span>
+              <input type="text" placeholder="HRT-12" />
+            </label>
+            <label className="field">
+              <span>Ürün Adı</span>
+              <input type="text" placeholder="1/2 Hortum" />
+            </label>
+          </div>
+          <ul className="bom-items">
+            <li className="bom-card">
+              <label>
+                <span>Malzeme Kodu</span>
+                <input type="text" placeholder="ABS-01" />
+              </label>
+              <label>
+                <span>Malzeme Adı</span>
+                <input type="text" value="ABS Granül" disabled />
+              </label>
+              <label>
+                <span>Birim</span>
+                <input type="text" value="kg" disabled />
+              </label>
+              <label>
+                <span>Adet</span>
+                <input type="number" placeholder="1" />
+              </label>
+              <button type="button">SİL</button>
+            </li>
 
-          <label className="field">
-            <span>Ürün Adı</span>
-            <input type="text" placeholder="1/2 Hortum" />
-          </label>
-        </div>
+            <li className="bom-card">
+              <label>
+                <span>Malzeme Kodu</span>
+                <input type="text" placeholder="ABS-01" />
+              </label>
+              <label>
+                <span>Malzeme Adı</span>
+                <input type="text" value="ABS Granül" disabled />
+              </label>
+              <label>
+                <span>Birim</span>
+                <input type="text" value="kg" disabled />
+              </label>
+              <label>
+                <span>Adet</span>
+                <input type="number" placeholder="1" />
+              </label>
+              <button type="button">SİL</button>
+            </li>
+          </ul>
+          <div className="bom-btn-group">
+            <button type="button">Satır Ekle</button>
+            <button type="button">BOM Kaydet</button>
+            <button type="button">BOM Sil</button>
+          </div>
+        </form>
       </div>
     </div>
   );
